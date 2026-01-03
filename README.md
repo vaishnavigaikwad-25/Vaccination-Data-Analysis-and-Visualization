@@ -1,6 +1,6 @@
 # Vaccination-Data-Analysis-and-Visualization
 Analyze global vaccination data to understand trends in vaccination coverage, disease incidence, and effectiveness. Data will be cleaned, and stored in a SQL database. Power BI will be used to connect to the SQL database and create interactive dashboards that provide insights on vaccination strategies and their impact on disease control
-Business Use Cases:
+## Business Use Cases:
 ●	Public Health Strategy:
 ○	Assess the effectiveness of vaccination programs in different regions and populations.
 ○	Prioritize areas with low vaccination coverage for targeted interventions.
@@ -13,20 +13,20 @@ Business Use Cases:
 ●	Global Health Policy:
 ○	Provide data-driven recommendations for vaccination policy formulation.
 ○	Support governments and health organizations with evidence on vaccine effectiveness.
-Approach:
-Data Cleaning.
+## Approach:
+### Data Cleaning.
 ●	Handle Missing Data: Impute missing values or remove incomplete records.
 ●	Normalize Units: Ensure consistency in units across datasets (e.g., percentage of coverage, number of reported cases).
 ●	Date Consistency: Format date fields uniformly across tables for easier analysis.
-SQL Database Setup
+###  SQL Database Setup
 ●	Create Tables: Store the extracted and cleaned data into relational SQL tables (e.g., vaccination data, disease incidence data, antigen data).
 ●	Normalize Data: Structure the data into separate tables (e.g., vaccines, diseases, countries, years) to avoid redundancy and improve querying performance.
 ●	Data Integrity: Implement primary and foreign keys to ensure referential integrity.
-Power BI Integration. 
+### Power BI Integration. 
 ●	Connect Power BI to SQL Database:
 ○	Use Power BI’s SQL connector to link to the SQL database and pull in the relevant tables for analysis.
 ○	Set up scheduled refreshes for updated data.
-Data Visualization in Power BI
+### Data Visualization in Power BI
 ●	Create Interactive Dashboards:
 ○	Use Power BI to create dynamic and visually engaging reports with filters and slicers for users to explore the vaccination data.
 ○	Visualize vaccination rates, disease incidence, and antigen coverage over time and across regions.
@@ -36,11 +36,11 @@ Data Visualization in Power BI
 ○	Scatter Plots: Correlate vaccination coverage and disease incidence across different countries or regions.
 ○	KPI Indicators: Track progress toward vaccination goals and health targets.
 
-Exploratory Data Analysis (EDA):
+### Exploratory Data Analysis (EDA):
 ●	Analyze vaccination coverage, disease incidence trends, and regional disparities using statistical summaries and correlation analysis. Visualize insights with bar charts, heatmaps, and line graphs to identify patterns, highlight low-coverage areas, and assess the impact of vaccination on disease reduction.
 
-Data Set Explanation:
-Table 1 : coverage data
+## Data Set Explanation:
+### Table 1 : coverage data
 Variables:
 ●	Group: Categorization of the data. Here, it represents countries.
 ●	Code: Unique identifier for the country (ISO Alpha-3 code).
@@ -53,7 +53,7 @@ Variables:
 ●	Target number: Number of individuals targeted for vaccination.
 ●	Dodge: Number of doses administered.
 ●	Coverage: Percentage of the target population that was vaccinated.
-Table 2 : Incidence Rate
+### Table 2 : Incidence Rate
 Variables:
 ●	Group : Classification of the data; here, it represents countries.
 ●	Code: Unique identifier for the country (ISO Alpha-3 code).
@@ -64,7 +64,7 @@ Variables:
 ●	Denominator: The population basis used to calculate the incidence rate (e.g., per live births, per total population).
 ●	Incidence rate: Number of disease cases per specified population unit.
 
-Table 3 : Reported cases
+### Table 3 : Reported cases
 Variables:
 ●	Group : Classification of the data; here, it represents countries.
 ●	Code: Unique identifier for the country (ISO Alpha-3 code).
@@ -74,7 +74,7 @@ Variables:
 ●	Disease description: Full description of the disease.
 ●	Cases: Number of reported cases of the disease for the specified year and region.
 
-Table 4 : Vaccine Introduction
+### Table 4 : Vaccine Introduction
 Variables:
 ●	ISO_3_Code : Unique 3-letter ISO country code.
 ●	Country Name: Name of the country.
@@ -82,7 +82,7 @@ Variables:
 ●	Year: The year the data is recorded for.
 ●	Description: Name of the vaccine or vaccine type.
 ●	Intro: Indicates whether the vaccine has been introduced into the country's vaccination program.
-Table 5 :  Vaccine Schedule Data
+### Table 5 :  Vaccine Schedule Data
 Variables:
 ●	ISO_3_Code : Unique 3-letter ISO country code.
 ●	Country Name: Name of the country.
